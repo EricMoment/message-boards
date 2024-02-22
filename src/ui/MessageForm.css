@@ -1,0 +1,63 @@
+.main-page-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.main-page-form > form {
+  width: 100%;
+}
+
+.main-page-form > form > textarea,
+.main-page-submit > button {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.main-page-form > form > textarea {
+  resize: none;
+  font-size: 2rem;
+  border: 1px solid rgb(80, 134, 0);
+  border-radius: 10px;
+  width: min(800px, 100%);
+  height: 8em;
+}
+
+.main-page-submit > button {
+  height: 60px;
+  width: 220px;
+  border-radius: 20px;
+  border: none;
+  background-color: greenyellow;
+  font-size: 1.6rem;
+  color: black;
+}
+
+.main-page-submit > button:hover {
+  background-color: blue;
+  color: white;
+}
+
+.main-page-err-message {
+  min-height: 40px;
+  color: red;
+}
+
+@media (max-width: 720px) {
+  .main-page-form > form > textarea {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-page-form > form > textarea {
+    font-size: 1.5rem;
+  }
+  .main-page-submit > button {
+    height: 40px;
+    width: 180px;
+    font-size: 1.2rem;
+  }
+}
